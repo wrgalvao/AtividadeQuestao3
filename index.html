@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <style>
+        fieldset
+        {
+            border: 1px solid black;
+            margin: 0px auto 0px auto;
+            width: 50%;
+        }
+        .inputBox
+        {
+            position: relative;
+        }
+        .inputSubmit{
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 315px;
+        }
+        h1{
+            text-align: center; 
+        }
+        label
+        {
+            width: 65px;
+            display: inline-block;
+        }
+    </style>
+    <h1>Informações Pessoais</h1>
+    <form id="cadastro">
+        <fieldset id="cadastroCliente" name="cadastroCliente"><legend>Cadastro de Cliente</legend>
+            <div class="inputBox">
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text">
+            </div>
+            <br>
+            Sexo:
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="masculino" value="Masculino">
+            <label for="feminino" name="feminino">Feminino</label>
+            <input type="radio" name="sexo" id="feminino" value="Feminino">
+            <br>
+            <div class="inputBox">
+                <br>
+                <label for="idade">Idade:</label>
+                <input id="idade" name="idade" type="number" min="0">
+            </div>
+            <br>
+            <div class="inputBox">
+                <label for="endereco">Endereco:</label>
+                <input id="endereco" name="endereco" type="text" placeholder="Digite o endereço">
+            </div>
+            <br>
+            <div class="inputBox">
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" name="cidade" type="text" placeholder="Digite a cidade">
+            </div>
+            <br>
+            <label id="estado" name="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option>RJ</option>
+                    <OPTION>SP</OPTION>
+                    <OPTION>PA</OPTION>
+                    <OPTION>CE</OPTION>
+                    <OPTION>AM</OPTION>
+                    <option>RS</option>
+                    <OPTION>GO</OPTION>
+                    <OPTION>DF</OPTION>
+                    <OPTION>AC</OPTION>
+                    <OPTION>PE</OPTION>
+                    <OPTION>PR</OPTION>
+                    <OPTION>TO</OPTION>
+                    <option>SC</option>
+                    <OPTION>AL</OPTION>
+                    <OPTION>AP</OPTION>
+                    <OPTION>BA</OPTION>
+                    <OPTION>ES</OPTION>
+                    <OPTION>MT</OPTION>
+                    <OPTION>MS</OPTION>
+                    <OPTION>MG</OPTION>
+                    <OPTION>PB</OPTION>
+                    <OPTION>PI</OPTION>
+                    <OPTION>RO</OPTION>
+                    <OPTION>RR</OPTION>
+                    <OPTION>SE</OPTION>
+                    <OPTION>MA</OPTION>
+                  </select>
+                  <br><br>
+                  <div class="inputBox">
+                    <label name="cep" id="cep">Cep:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+                  </div>
+                  <br>
+                  <div class="inputBox">
+                    <label name="telefone" id="telefone">Tel/Res:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999">
+                  </div>
+                  <br>
+                  <div class="inputBox">
+                    <label name="celular" id="celular">Tel/Cel:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(99)99999-9999">
+                  </div>
+                  <br>
+                  <div class="inputBox">
+                    <label name="email" id="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o endereço de email">
+                  </div>            
+        </fieldset>
+        <input type="submit" value="incluir" method="POST" class="inputSubmit">
+    </form>    
+</body>
+</html>
